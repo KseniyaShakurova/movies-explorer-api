@@ -11,4 +11,4 @@ IP 158.160.105.181
 
 Frontend в разработке
 
-Backend https://api.shakurovak.nomoredomainsicu.ru
+Backend https://api.movie.search.nomoredomainsicu.ru
