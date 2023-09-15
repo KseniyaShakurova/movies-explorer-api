@@ -9,6 +9,6 @@ Movies Explorer API БЕКЕНД
 Ссылки на проект Movies.Яндекс.Практика
 IP 158.160.105.181
 
-Frontend в разработке...
+Frontend в разработке
 
 Backend https://api.shakurovak.nomoredomainsicu.ru
