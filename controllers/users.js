@@ -78,10 +78,13 @@ const editUser = (req, res, next) => {
       return res.status(NotError).send({ data: user });
     })
     .catch((error) => {
-      if (error.name === 'ValidationError') {
-        return res.status(BadRequest).send({ message: 'Пользователь с указанным _id не найден.' });
+      if (error.code === 11000) {
+        next(new ConflictError('Пользователь с таким email уже зарегистрирован'));
+      } else if ((error.name === 'ValidationError')) {
+        next(new BadRequest(error.message));
+      } else {
+        next(error);
       }
-      return next(error);
     });
 };
 
